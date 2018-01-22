@@ -140,6 +140,21 @@
     }
 }
 
+- (void)setButtonHeight:(CGFloat)buttonHeight
+    {
+        _buttonHeight = buttonHeight;
+        if (_buttonHeight > 0)
+        {
+            CGRect frame = self.frame;
+            frame.size.height= _buttonHeight;
+            self.frame = frame;
+        }
+        else
+        {
+            [self sizeToFit];
+        }
+    }
+
 -(void) setEdgeInsets:(UIEdgeInsets)insets
 {
     self.contentEdgeInsets = insets;
