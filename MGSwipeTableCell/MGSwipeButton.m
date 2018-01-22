@@ -151,7 +151,7 @@
         }
         else
         {
-            [self sizeToFit];
+            //[self sizeToFit];
         }
     }
 
